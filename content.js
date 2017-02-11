@@ -24,3 +24,10 @@ $('.minimize-comment').click(function() {
     fileContent.css('display','block');
   }
 });
+
+// Scroll to Bottom
+$('div.gh-header-actions').prepend('<button class="btn btn-sm jump-to-bottom" data-disable-with="">Go to Bottom</button>')
+
+$('button.jump-to-bottom').click(function() {
+  window.scrollTo(0,document.body.scrollHeight);
+});
