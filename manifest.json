@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "GitHub Improvements",
+  "version": "0.1",
+  "author": "Xavier Hocquet",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["jquery-3.1.1.slim.min.js","content.js"],
+      "css": ["style.css"]
+    }
+  ]
+}
