@@ -25,8 +25,11 @@ $('.minimize-comment').click(function() {
   }
 });
 
-// Scroll to Bottom
+// Scroll to bottom of PR/Issue
 $('div.gh-header-actions').prepend('<button class="btn btn-sm jump-to-bottom" data-disable-with="">Go to Bottom</button>')
+
+// Scroll to bottom of file
+$('div.file-navigation .BtnGroup').prepend('<button class="btn btn-sm jump-to-bottom" data-disable-with="">Go to Bottom</button>')
 
 $('button.jump-to-bottom').click(function() {
   window.scrollTo(0,document.body.scrollHeight);
