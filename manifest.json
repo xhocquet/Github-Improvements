@@ -3,6 +3,13 @@
   "name": "GitHub Improvements",
   "version": "0.1",
   "author": "Xavier Hocquet",
+  "permissions": [
+    "storage"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
   "content_scripts": [
     {
       "matches": ["https://github.com/*"],
